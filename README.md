@@ -1,2 +1,4 @@
 # Simple_Chatbot
 A Simple Chatbot using Streamlit, Langchain and Gemini API
+
+This Streamlit app hosts a simple chatbot using the Gemini 2.0 Flash model from Google through the LangChain library. It connects to the model using ChatGoogleGenerativeAI, with the API key provided directly in the code. The conversation is managed using HumanMessage, AIMessage, and SystemMessage, and the full chat history is stored in st.session_state to maintain context. Streamlit functions are used throughout the app: st.set_page_config() sets the page title and icon, st.title() adds a heading, st.chat_message() displays messages from the user and assistant in a styled conversational format, st.chat_input() takes user input, and st.button() is used to clear the chat. The assistant's response appears with a typing animation using st.empty() and time.sleep(). When the "Clear Chat" button is clicked, it resets the chat history and reloads the app using st.rerun()
