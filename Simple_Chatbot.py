@@ -9,7 +9,7 @@ st.set_page_config(page_title="🤖 Gemini Chatbot", page_icon="💬")
 st.title("🤖 Gemini Chatbot")
 
 # Initialising model
-chat_model = ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0.7, google_api_key=GEMINI_API_KEY)
+chat_model = ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0.7, google_api_key=st.secrets['GEMINI_API_KEY'])
 
 # Initialising chat history
 if "chat_history" not in st.session_state:
